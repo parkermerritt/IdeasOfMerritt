@@ -11,12 +11,12 @@
   box-sizing: border-box;
 }
 
-html, body {
+html, body, .parent {
   background: #ffffff;
   height: 100%;
 }
 
-body:hover .column {
+body:hover .parent .column {
   width: 15%;
 }
 
@@ -37,6 +37,7 @@ body:hover .column {
   margin: 0;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  text-align: center;
 }
 
 .column:hover {
@@ -44,6 +45,9 @@ body:hover .column {
 }
 .column:hover p {
   opacity: 1;
+}
+img {
+    width: 50px;
 }
 
 
@@ -75,38 +79,61 @@ p {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   font-family: 'IBM Plex Sans', sans-serif;
+  font-size:18px;
 }
 
+
+@media only screen and (max-width: 600px) {
+  .column {
+    width:100%;
+    height:20%;
+    }
+.parent .column:hover ~ .column {
+    height: 100%;
+        display: none;
+}
+}
+
+
 </style>
+
 <head>
-  </head>
-
-
-
+</head>
+<div class="parent">
 <div class="column white">
     <h2>Wikipedia Bot</h2>
+    <img src="earth--filled.svg">
+
     <p>In this example, you’ll build a chatbot that gives definitions of not only a given set of entities, but the whole world of Wikipedia. We will make external API callouts from Watson Assistant using Webhooks to get definitions for contextual entities from Wikipedia.</p>
     <a href="https://whats-up-watson.github.io/WikiBot"><p>Link to Demo<p></a>
 
 </div>
 <div class="column black" href="https://whats-up-watson.github.io/HelpDeskBot">
-        <h2>Help Desk Bot</h2>
+    <h2>Help Desk Bot</h2>
+    <img src="chat-bot-w.svg">
+
         <p>In this developer code pattern, we use the typical customer care chatbot experience but instead of relying on predefined responses, our dialog will provide a hook that can call out to other IBM Watson® services for additional sources of information. In our case, it will be an owners manual that has been uploaded into Watson Discovery.</p>
     <a href="https://whats-up-watson.github.io/HelpDeskBot"><p>Link to Demo<p></a>
 </div>
       <div class="column white">
         <h2>Natural Language APIs</h2>
+        <img src="forum.svg">
         <p>Natural Language Understanding is a collection of APIs that offer text analysis through natural language processing. This set of APIs can analyze text to help you understand its concepts, entities, keywords, sentiment, and more. Additionally, you can create a custom model for some APIs to get specific results that are tailored to your domain.</p>
         <a href="https://natural-language-understanding-demo.ng.bluemix.net/"><p>Link to Demo<p></a>
     </div>
       <div class="column black" >
         <h2>Personality Insights</h2>
+        <img src="eye-w.svg">
+
         <p class="white">Predict personality characteristics, needs and values through written text. Understand your customers’ habits and preferences on an individual level, and at scale.</p>
         <a href="https://personality-insights-demo.ng.bluemix.net/"><p>Link to Demo<p></a>
     </div>
       <div class="column white">
         <h2>COVID-19 Assistant</h2>
+        <img src="warning--filled.svg">
+
         <p>Watson Assistant is a conversational AI platform that provides an engaging experience for users to get even their most complex issues solved, supporting both chat and speech interfaces. IBM is offering Watson Assistant pretrained with COVID-19 questions via the IBM Cloud available for no charge for at least 90 days, and will assist with initial setup.</p>
         <a href="https://www.ibm.com/watson/covid-response"><p>Link to Demo<p></a>
 
     </div>
+</div>
