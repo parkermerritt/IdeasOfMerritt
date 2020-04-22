@@ -65,15 +65,7 @@ h2 {
   background-color: #000000;
 }
 
-/*.footer {
-  font-family: 'IBM Plex Sans', sans-serif;
-  list-style-type: none;
-  position: relative;
-  overflow: hidden;
-  background-color: #000000;
-  width: 100%;
-  text-align: center;
-}*/
+
 .footer {
   font-family: 'IBM Plex Sans', sans-serif;
   bottom: 0;
@@ -103,6 +95,7 @@ li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+
 }
 
 .logo {
@@ -113,6 +106,8 @@ li a {
 
 a {
     text-decoration: none;
+    cursor: pointer;
+
 }
 
 .column:hover h2, .column:hover img {
@@ -132,26 +127,26 @@ a {
 <head>
 </head>
 <div class="menu">
-  <li><a href="./index.html">AI Demo Directory</a></li>
+  <li><a onclick="location.href='./index.html'">AI Demo Directory</a></li>
   <li class="logo"><a href="https://www.ibm.com/artificial-intelligence">IBM</a></li>
 </div>
 
 
-    <a href="./ai.html">
+    <a onclick="location.href='./ai.html'">
     <div class="column white">
     <h2>Conversational AI</h2>
     <img src="chat-bot.svg">
     </div>
     </a>
 
-    <a href="./language.html">
+    <a onclick="location.href='./language.html'">
     <div class="column black">
         <h2>Language APIs</h2>
         <img src="translate-w.svg">
     </div>
     </a>
 
-    <a href="https://www.ibm.com/products/cognos-analytics">
+    <a onclick="location.href='https://www.ibm.com/products/cognos-analytics'">
     <div class="column white">
         <h2>Analytics</h2>
         <img src="data-vis--1.svg">
@@ -160,8 +155,8 @@ a {
     
     <div class="footer">
       <ul>
-      <li><a href="javascript:void(0)" onclick="location.href='https://www.youtube.com/channel/UC9qSUbrydkjfmEygaKl6dKw?view_as=subscriber'"><img style="width:19px; margin-top:-5px; margin-left: -45px;" src="YT-play.png">  Watch</a></li>
-      <li><a href="https://whatsupwatson.slack.com"><img style="width:19px; margin-top:-5px;" src="slack-logo-icon.png"> Chat</a></li>
+        <li><a onclick="location.href='https://www.youtube.com/channel/UC9qSUbrydkjfmEygaKl6dKw?view_as=subscriber'"><img style="width:19px; margin-top:-5px; margin-left: -45px;" src="YT-play.png">  Watch</a></li>
+  <li><a onclick="location.href='https://whatsupwatson.slack.com'"><img style="width:19px; margin-top:-5px;" src="slack-logo-icon.png"> Chat</a></li>
       </ul>
     </div>
 

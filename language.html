@@ -41,8 +41,9 @@ body:hover .parent .column {
   transition: all 0.5s ease;
   text-align: center;
 }
-
-
+a {
+  cursor: pointer;
+}
 img {
     width: 50px;
 }
@@ -135,6 +136,7 @@ li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .logo {
@@ -181,14 +183,14 @@ h2 a {
 <head>
 </head>
 <div class="menu">
-  <li><a href="./index.html">AI Demo Directory</a></li>
-  <li class="logo"><a href="https://www.ibm.com/artificial-intelligence">IBM</a></li>
+  <li><a onclick="location.href='./index.html'">AI Demo Directory</a></li>
+  <li class="logo"><a onclick="location.href='https://www.ibm.com/artificial-intelligence'">IBM</a></li>
 
 </div>
 
 <div class="parent">
 
-    <a href="https://language-translator-demo.ng.bluemix.net/">
+    <a onclick="location.href='https://language-translator-demo.ng.bluemix.net/'">
       <div class="column white">
         <h2>Translator API</h2>
         <img src="translate.svg">
@@ -196,7 +198,7 @@ h2 a {
       </div>
     </a>
 
-    <a href="https://tone-analyzer-demo.ng.bluemix.net/">
+    <a onclick="location.href='https://tone-analyzer-demo.ng.bluemix.net/'">
     <div class="column black">
         <h2>Tone Analyzer</h2>
         <img src="phrase-sentiment-w.svg">
@@ -204,7 +206,7 @@ h2 a {
     </div>
     </a>
 
-    <a href="https://natural-language-understanding-demo.ng.bluemix.net">
+    <a onclick="location.href='https://natural-language-understanding-demo.ng.bluemix.net'">
     <div class="column white">
         <h2>Natural Language API</h2>
         <img src="forum.svg">
@@ -212,7 +214,7 @@ h2 a {
     </div>
     </a>
 
-    <a href="https://personality-insights-demo.ng.bluemix.net/">
+    <a onclick="location.href='https://personality-insights-demo.ng.bluemix.net/'">
     <div class="column black">
         <h2>Personality Insights</h2>
         <img src="eye-w.svg">
@@ -220,7 +222,7 @@ h2 a {
     </div>
     </a>
 
-    <a href="https://text-to-speech-demo.ng.bluemix.net/">
+    <a onclick="location.href='https://text-to-speech-demo.ng.bluemix.net/'">
     <div class="column white">
         <h2>Text to Speech</h2>
         <img src="mobile--audio.svg">
@@ -234,7 +236,7 @@ h2 a {
 
 <div class="footer">
   <ul>
-  <li><a href="javascript:void(0)" onclick="location.href='https://www.youtube.com/channel/UC9qSUbrydkjfmEygaKl6dKw?view_as=subscriber'"><img style="width:19px; margin-top:-5px; margin-left: -45px;" src="YT-play.png">  Watch</a></li>
-  <li><a href="https://whatsupwatson.slack.com"><img style="width:19px; margin-top:-5px;" src="slack-logo-icon.png"> Chat</a></li>
+  <li><a onclick="location.href='https://www.youtube.com/channel/UC9qSUbrydkjfmEygaKl6dKw?view_as=subscriber'"><img style="width:19px; margin-top:-5px; margin-left: -45px;" src="YT-play.png">  Watch</a></li>
+  <li><a onclick="location.href='https://whatsupwatson.slack.com'"><img style="width:19px; margin-top:-5px;" src="slack-logo-icon.png"> Chat</a></li>
   </ul>
 </div>

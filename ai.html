@@ -43,7 +43,9 @@ body:hover .parent .column {
   text-align: center;
   overflow: auto;
 }
-
+a {
+  cursor: pointer;
+}
 
 img {
     width: 50px;
@@ -138,6 +140,8 @@ li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+
+
 }
 
 .logo {
@@ -204,15 +208,15 @@ h2 a {
 </head>
 
 <div class="menu">
-  <li><a href="./index.html">AI Demo Directory</a></li>
-  <li class="logo"><a href="https://www.ibm.com/artificial-intelligence">IBM</a></li>
+  <li><a onclick="location.href='./index.html'">AI Demo Directory</a></li>
+  <li class="logo"><a onclick="location.href='https://www.ibm.com/artificial-intelligence'">IBM</a></li>
 </div>
 <div class="parent">
 
   <!-- <div class="showme"><p>HEY U</p></div> -->
 
 
-    <a href="https://whats-up-watson.github.io/WikiBot">
+    <a onclick="location.href='https://whats-up-watson.github.io/WikiBot'">
       <div class="column white">
         <h2>Wikipedia Bot</h2>
         <img src="earth--filled.svg">
@@ -220,7 +224,7 @@ h2 a {
       </div>
     </a>
 
-    <a href="https://whats-up-watson.github.io/HelpDeskBot">
+    <a onclick="location.href='https://whats-up-watson.github.io/HelpDeskBot'">
     <div class="column black">
         <h2>Help Desk Bot</h2>
         <img src="headset-w.svg">
@@ -228,7 +232,7 @@ h2 a {
     </div>
     </a>
 
-    <a href="https://www.youtube.com/watch?v=Jxi7U7VOMYg">
+    <a onclick="location.href='https://www.youtube.com/watch?v=Jxi7U7VOMYg'">
     <div class="column white">
         <h2>Bank Assistant</h2>
         <img src="finance.svg">
@@ -236,7 +240,7 @@ h2 a {
     </div>
     </a>
 
-    <a href="https://www.ibm.com/cloud/garage/dte/tutorial/watson-assistant-features-lab-2-voice-integration">
+    <a onclick="location.href='https://www.ibm.com/cloud/garage/dte/tutorial/watson-assistant-features-lab-2-voice-integration'">
     <div class="column black">
         <h2>Voice Agent</h2>
         <img src="phone-w.svg">
@@ -244,7 +248,7 @@ h2 a {
     </div>
     </a>
 
-    <a href="https://www.ibm.com/watson/covid-response">
+    <a onclick="location.href='https://www.ibm.com/watson/covid-response'">
     <div class="column white">
         <h2>COVID-19 Assistant</h2>
         <img src="warning--filled.svg">
@@ -262,7 +266,7 @@ h2 a {
 
 <div class="footer">
   <ul>
-  <li><a href="javascript:void(0)" onclick="location.href='https://www.youtube.com/channel/UC9qSUbrydkjfmEygaKl6dKw?view_as=subscriber'"><img style="width:19px; margin-top:-5px; margin-left: -45px;" src="YT-play.png">  Watch</a></li>
-  <li><a href="https://whatsupwatson.slack.com"><img style="width:19px; margin-top:-5px;" src="slack-logo-icon.png"> Chat</a></li>
+    <li><a onclick="location.href='https://www.youtube.com/channel/UC9qSUbrydkjfmEygaKl6dKw?view_as=subscriber'"><img style="width:19px; margin-top:-5px; margin-left: -45px;" src="YT-play.png">  Watch</a></li>
+    <li><a onclick="location.href='https://whatsupwatson.slack.com'"><img style="width:19px; margin-top:-5px;" src="slack-logo-icon.png"> Chat</a></li>
   </ul>
 </div>
