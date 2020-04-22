@@ -47,6 +47,13 @@ img {
     width: 50px;
 }
 
+h2,img {
+  -webkit-transition: all 0.5s ease; /* Safari and Chrome */
+  	 -moz-transition: all 0.5s ease; /* Firefox */
+  	 -o-transition: all 0.5s ease; /* IE 9 */
+  	 -ms-transition: all 0.5s ease; /* Opera */
+  	 transition: all 0.5s ease;
+}
 
 h2 {
 padding-top:10%;
@@ -98,6 +105,19 @@ p {
   background-color: #000000;
 }
 
+.footer {
+  font-family: 'IBM Plex Sans', sans-serif;
+  list-style-type: none;
+  position: fixed;
+  bottom: 0;
+  overflow: hidden;
+  background-color: #000000;
+  width: 100%;
+  text-align: center;
+}
+
+
+
 li a {
   float: left;
   display: block;
@@ -111,6 +131,18 @@ li a {
   position: absolute;
   right: 0px;
   color: white;
+}
+
+.column:hover h2, .column:hover img {
+    -ms-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
 }
 
 @media only screen and (min-width: 800px) {
@@ -186,4 +218,10 @@ h2 a {
     </div>
     </a>
     
+</div>
+
+
+<div class="footer">
+  <li><a href="javascript:void(0)" onclick="location.href='https://www.youtube.com/channel/UC9qSUbrydkjfmEygaKl6dKw?view_as=subscriber'"><img style="width:19px; margin-top:-5px;" src="YT-play.png">  Watch</a></li>
+  <li><a href="https://whatsupwatson.slack.com"><img style="width:19px; margin-top:-5px;" src="slack-logo-icon.png"> Chat</a></li>
 </div>
