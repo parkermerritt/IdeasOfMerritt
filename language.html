@@ -107,15 +107,20 @@ p {
 
 .footer {
   font-family: 'IBM Plex Sans', sans-serif;
-  list-style-type: none;
-  position: fixed;
   bottom: 0;
   overflow: hidden;
   background-color: #000000;
-  width: 100%;
-  text-align: center;
 }
 
+.footer ul{
+  margin: 0px;
+  clear:both;
+  text-align:center;
+}
+.footer ul li {
+  list-style-type: none;
+    display:inline-block;  
+}
 
 
 li a {
@@ -221,7 +226,10 @@ h2 a {
 </div>
 
 
+
 <div class="footer">
-  <li><a href="javascript:void(0)" onclick="location.href='https://www.youtube.com/channel/UC9qSUbrydkjfmEygaKl6dKw?view_as=subscriber'"><img style="width:19px; margin-top:-5px;" src="YT-play.png">  Watch</a></li>
+  <ul>
+  <li><a href="javascript:void(0)" onclick="location.href='https://www.youtube.com/channel/UC9qSUbrydkjfmEygaKl6dKw?view_as=subscriber'"><img style="width:19px; margin-top:-5px; margin-left: -45px;" src="YT-play.png">  Watch</a></li>
   <li><a href="https://whatsupwatson.slack.com"><img style="width:19px; margin-top:-5px;" src="slack-logo-icon.png"> Chat</a></li>
+  </ul>
 </div>

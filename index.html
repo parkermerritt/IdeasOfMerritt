@@ -9,21 +9,16 @@
 <link rel="icon" href="Favicon.png">
 
 <style>
-*, *:before, *:after {
-  box-sizing: border-box;
-}
-
-html, body, .parent {
-  background: #ffffff;
-  height: 100%;
-}
 
 .column {
   width: 100% !important;
-  height: 29% !important;
+  height: 29.3vh !important;
   text-align: center;
-}
+  min-height: 200px;
+  max-height: 500px;
+  margin: 0;
 
+}
 img {
     width: 50px;
     margin-top:1px;
@@ -70,18 +65,31 @@ h2 {
   background-color: #000000;
 }
 
-.footer {
+/*.footer {
   font-family: 'IBM Plex Sans', sans-serif;
   list-style-type: none;
-  position: fixed;
-  bottom: 0;
+  position: relative;
   overflow: hidden;
   background-color: #000000;
   width: 100%;
   text-align: center;
+}*/
+.footer {
+  font-family: 'IBM Plex Sans', sans-serif;
+  bottom: 0;
+  overflow: hidden;
+  background-color: #000000;
 }
 
-
+.footer ul{
+  margin: 0px;
+  clear:both;
+  text-align:center;
+}
+.footer ul li {
+  list-style-type: none;
+    display:inline-block;  
+}
 
 li a {
   float: left;
@@ -114,14 +122,6 @@ a {
     transition: all .5s;
 }
 
-@media only screen and (max-width: 800px) {
-.column {
-    width: 100% !important;
-    height: 30% !important;
-}
-}
-
-
 </style>
 
 <head>
@@ -131,7 +131,6 @@ a {
   <li class="logo"><a href="https://www.ibm.com/artificial-intelligence">IBM</a></li>
 </div>
 
-<div class="parent">
 
     <a href="./ai.html">
     <div class="column white">
@@ -153,10 +152,11 @@ a {
         <img src="data-vis--1.svg">
     </div>
     </a>
+    
+    <div class="footer">
+      <ul>
+      <li><a href="javascript:void(0)" onclick="location.href='https://www.youtube.com/channel/UC9qSUbrydkjfmEygaKl6dKw?view_as=subscriber'"><img style="width:19px; margin-top:-5px; margin-left: -45px;" src="YT-play.png">  Watch</a></li>
+      <li><a href="https://whatsupwatson.slack.com"><img style="width:19px; margin-top:-5px;" src="slack-logo-icon.png"> Chat</a></li>
+      </ul>
+    </div>
 
-</div>
-
-<div class="footer">
-  <li><a href="javascript:void(0)" onclick="location.href='https://www.youtube.com/channel/UC9qSUbrydkjfmEygaKl6dKw?view_as=subscriber'"><img style="width:19px; margin-top:-5px;" src="YT-play.png">  Watch</a></li>
-  <li><a href="https://whatsupwatson.slack.com"><img style="width:19px; margin-top:-5px;" src="slack-logo-icon.png"> Chat</a></li>
-</div>
