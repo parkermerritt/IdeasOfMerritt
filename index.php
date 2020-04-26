@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
 <title>Ideas of Merritt</title>
 <meta charset="UTF-8">
