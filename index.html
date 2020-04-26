@@ -60,9 +60,14 @@
         padding-bottom: 2px;
     }
 
-    img {
+    .medium {
         min-width: 250px;
         max-width: 300px;
+    }
+
+    .icon {
+        width: 23px;
+        margin: 5px;
     }
 
     .bg {
@@ -201,15 +206,25 @@
                 </p>
                 <div class="padded ">
                     <h3>Atlanta, USA</h3>
-                    <h3>+1 407 572 5874</h3>
                     <h3>parker.merritt@gmail.com</h3>
+                    <div class="row">
+                        <a href=" https://www.linkedin.com/in/parker-merritt ">
+                            <img class="icon " src="./linkedin-w.svg ">
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCEi--pxJQxqcWBHpYy8v35w?view_as=subscriber ">
+                            <img class="icon " style="margin-top: 8px; " src="./youtube-w.svg ">
+                        </a>
+                        <a href="https://twitter.com/parkermerritt ">
+                            <img class="icon " style="margin-top: 7px; " src="./twitter-w.svg ">
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="w3-half w3-white w3-container " style="height:500px ">
                 <div class="w3-padding-64 w3-padding-large ">
                     <h1>Contact</h1>
                     <h4>Schedule a free consultation.</h4>
-                    <form class="w3-container w3-card w3-padding-32 w3-white " method="POST" netlify>
+                    <form class="w3-container w3-card w3-padding-32 w3-white " method="POST " netlify>
                         <div class="w3-section ">
                             <label>Name</label>
                             <input class="w3-input " style="width:100%; " type="text " required name="Name ">
@@ -232,7 +247,7 @@
         <footer class="w3-container w3-black w3-padding-64 ">
             <h3 class="padded ">Read more of my work on </h3>
             <a href="https://medium.com/@parkermerritt ">
-                <img style="margin-left:14px; width:25px; " src="medium-white.svg ">
+                <img class="medium " style="margin-left:14px; width:25px; " src="medium-white.svg ">
             </a>
         </footer>
 
