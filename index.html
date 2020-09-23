@@ -50,6 +50,19 @@
         width: 90%;
     }
 
+    .menu {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding: 20px;
+    }
+
+    .menu h1 {
+        font-size: 55px;
+        line-height: 43px;
+        text-align: right;
+    }
+
     label,
     button {
         font-family: 'IBM Plex Sans', sans-serif;
@@ -77,7 +90,6 @@
         background-repeat: no-repeat;
         background-attachment: relative;
         background-position: 102% 101%;
-
     }
 
     .container {
@@ -97,7 +109,14 @@
         -ms-flex-align: start;
         -webkit-align-items: flex-start;
         align-items: flex-start;
+        position: relative;
     }
+
+    a {
+        text-decoration: none;
+        background-color: transparent;
+    }
+
 
     a:hover div h2,
     a:hover div h4 {
@@ -132,7 +151,7 @@
             flex-direction: row-reverse;
         }
         .short {
-            height: 290px !important;
+            height: 400px !important;
         }
         .mid {
             height: 450px !important;
@@ -140,6 +159,13 @@
         .hidden-2 {
             display: none;
         }
+
+        .menu h1 {
+            font-size: 50px;
+            line-height: 40px;
+            text-align: right;
+        }
+
 
     }
 
@@ -167,6 +193,14 @@
             <div class="padded ">
                 <h1>Ideas of Merritt</h1>
                 <h3>A collection of thoughts about technology and business.</h3>
+                <div class="menu">
+                    <a href="./clients.html">
+                        <h1>Clients</h1>
+                    </a>
+                    <!--<a href="./clients.html">
+                        <h1>Services</h1>
+                    </a>-->
+                </div>
             </div>
 
         </div>
@@ -213,59 +247,74 @@
         </div>
 
         <!-- Third Grid: Swing By & Contact -->
-        <div class="w3-row " id="contact ">
-            <div class="w3-half mid w3-black w3-container padded " style="height:500px ">
-                <div class="padded ">
-                    <h1>Parker Merritt</h1>
+        <div>
+            <div class="w3-row " id="contact ">
+                <div class="w3-half mid w3-black w3-container padded " style="height:500px ">
+
+                    <div class="padded ">
+                        <h1>Parker Merritt</h1>
+
+                    </div>
+                    <p>I provide a variety of writing services, including copywriting, social media marketing, and creative
+                        technical documentation.
+                    </p>
+                    <div class="padded ">
+                        <h3>Atlanta, USA</h3>
+                        <h3>parker.merritt@gmail.com</h3>
+                        <div class="row">
+                            <a href=" https://www.linkedin.com/in/parker-merritt ">
+                                <img class="icon " src="./linkedin-w.svg ">
+                            </a>
+                            <a href="https://www.youtube.com/channel/UCEi--pxJQxqcWBHpYy8v35w?view_as=subscriber ">
+                                <img class="icon " style="margin-top: 8px; " src="./youtube-w.svg ">
+                            </a>
+                            <a href="https://twitter.com/parkermerritt ">
+                                <img class="icon " style="margin-top: 7px; " src="./twitter-w.svg ">
+                            </a>
+
+
+                        </div>
+
+
+                    </div>
+
                 </div>
-                <p>I provide a variety of writing services, including copywriting, social media marketing, and creative technical
-                    documentation.
-                </p>
-                <div class="padded ">
-                    <h3>Atlanta, USA</h3>
-                    <h3>parker.merritt@gmail.com</h3>
-                    <div class="row">
-                        <a href=" https://www.linkedin.com/in/parker-merritt ">
-                            <img class="icon " src="./linkedin-w.svg ">
-                        </a>
-                        <a href="https://www.youtube.com/channel/UCEi--pxJQxqcWBHpYy8v35w?view_as=subscriber ">
-                            <img class="icon " style="margin-top: 8px; " src="./youtube-w.svg ">
-                        </a>
-                        <a href="https://twitter.com/parkermerritt ">
-                            <img class="icon " style="margin-top: 7px; " src="./twitter-w.svg ">
-                        </a>
+                <div class="w3-half w3-white w3-container " style="height:500px ">
+                    <div class="w3-padding-64 w3-padding-large ">
+                        <h1>Contact</h1>
+                        <h4>Schedule a free consultation.</h4>
+                        <form class="w3-container w3-card w3-padding-32 w3-white " method="POST " netlify>
+                            <div class="w3-section ">
+                                <label>Name</label>
+                                <input class="w3-input " style="width:100%; " type="text " required name="Name ">
+                            </div>
+                            <div class="w3-section ">
+                                <label>Email</label>
+                                <input class="w3-input " style="width:100%; " type="text " required name="Email ">
+                            </div>
+                            <div class="w3-section ">
+                                <label>Message</label>
+                                <input class="w3-input " style="width:100%; " type="text " required name="Message ">
+                            </div>
+                            <button type="submit " class="w3-button w3-black w3-right ">Send</button>
+                        </form>
                     </div>
                 </div>
             </div>
-            <div class="w3-half w3-white w3-container " style="height:500px ">
-                <div class="w3-padding-64 w3-padding-large ">
-                    <h1>Contact</h1>
-                    <h4>Schedule a free consultation.</h4>
-                    <form class="w3-container w3-card w3-padding-32 w3-white " method="POST " netlify>
-                        <div class="w3-section ">
-                            <label>Name</label>
-                            <input class="w3-input " style="width:100%; " type="text " required name="Name ">
-                        </div>
-                        <div class="w3-section ">
-                            <label>Email</label>
-                            <input class="w3-input " style="width:100%; " type="text " required name="Email ">
-                        </div>
-                        <div class="w3-section ">
-                            <label>Message</label>
-                            <input class="w3-input " style="width:100%; " type="text " required name="Message ">
-                        </div>
-                        <button type="submit " class="w3-button w3-black w3-right ">Send</button>
-                    </form>
-                </div>
-            </div>
+
         </div>
 
+
         <!-- Footer -->
-        <footer class="w3-container w3-black w3-padding-64 ">
+        <footer class="w3-container w3-black w3-padding-64 w3-row">
             <h3 class="padded ">Read more of my work on </h3>
             <a href="https://medium.com/@parkermerritt ">
                 <img class="medium " style="margin-left:14px; width:25px; " src="medium-white.svg ">
             </a>
+            <div>
+                <p style="text-align:center;padding-top:14px;margin-bottom:-20px;">
+                    <br/> &#169; Ideas of Merritt | Mesh Methods LLC</p>
+            </div>
         </footer>
 
 </body>
